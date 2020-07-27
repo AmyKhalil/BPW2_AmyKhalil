@@ -11,12 +11,12 @@ public class Collider_Room : MonoBehaviour
     public AudioClip GreekMusic; 
     private AudioSource muziekSpeler; 
     private bool muziekGespeeld;
-
+ 
     // Start is called before the first frame update
     void Start()
     {
         muziekSpeler = this.gameObject.GetComponent<AudioSource>();
-        RenderSettings.skybox = DaySkybox;      
+        RenderSettings.skybox = DaySkybox;   
     }
     
     private void OnTriggerEnter(Collider other)
